@@ -6,7 +6,7 @@
   <meta name="description" content="IQ5 AI platform helps Amazon sellers optimize pricing, inventory, and advertising strategies with real-time insights and predictive analytics.">
   <meta name="keywords" content="Amazon, eCommerce, AI pricing, inventory management, advertising optimization, seller tools, SP-API">
   <meta name="author" content="IQ5 B.V.">
-  <title>IQ5 | AI for eCommerce Optimization</title>
+  <title>IQ5 | AI-Powered Amazon Seller Platform</title>
   <link rel="canonical" href="https://iq5.io">
 
   <!-- Favicon -->
@@ -17,7 +17,7 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="IQ5 | AI for eCommerce Optimization">
+  <meta property="og:title" content="IQ5 | AI-Powered Amazon Seller Platform">
   <meta property="og:description" content="IQ5 empowers Amazon sellers with AI-powered dynamic pricing, inventory-aware strategies, and predictive insights — all in one powerful platform.">
   <meta property="og:url" content="https://iq5.io">
   <meta property="og:image" content="https://iq5.io/img/logo-2x1024.png">
@@ -26,145 +26,1039 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="IQ5 | AI for eCommerce Optimization">
+  <meta name="twitter:title" content="IQ5 | AI-Powered Amazon Seller Platform">
   <meta name="twitter:description" content="IQ5 empowers Amazon sellers with AI-powered dynamic pricing, inventory-aware strategies, and predictive insights — all in one powerful platform.">
   <meta name="twitter:image" content="https://iq5.io/img/logo-2x1024.png">
- 
-  <style>
-    .hero-bg {
-      background: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      position: relative;
-    }
-    .hero-bg::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(15, 23, 42, 0.7);
-    }
-  </style>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/feather-icons"></script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "IQ5 B.V.",
-    "url": "https://iq5.io",
-    "sameAs": [],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "email": "info@iq5.io",
-      "contactType": "customer support"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Vinkenburgstraat 2A",
-      "postalCode": "3512AB",
-      "addressLocality": "Utrecht",
-      "addressCountry": "Netherlands"
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
     }
-  }
   </script>
+  
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    .hero-bg {
+      background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 50%, #6366f1 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .feature-card {
+      transition: all 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .pricing-card {
+      transition: all 0.3s ease;
+    }
+    .pricing-card:hover {
+      transform: translateY(-5px);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 50%, #6366f1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .coming-soon-badge {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      font-size: 0.7rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-weight: 600;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full bg-gray-50 shadow-sm z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      
+      <!-- Logo with Company Name -->
+      <a href="index.html" class="flex items-center space-x-3">
+        <img src="img/logo-96x96.png" alt="IQ5" class="w-12 h-12">
+          <span class="text-xl font-bold text-gray-800">IQ5</span>
+          <span class="text-sm text-gray-600 font-bold">B.V.</span>
+      </a>
+
+      <!-- Primary Navigation -->
+      <nav class="hidden md:flex items-center space-x-8 font-medium">
+        <a href="index.html" class="text-gray-600 hover:text-primary-600 transition-colors">Home</a>
+        <a href="#features" class="text-gray-600 hover:text-primary-600 transition-colors">Features</a>
+        <a href="#pricing" class="text-gray-600 hover:text-primary-600 transition-colors">Pricing</a>
+        <a href="#contact" class="text-gray-600 hover:text-primary-600 transition-colors">Contact</a>
+        <span class="bg-green-100 text-green-800 text-xs font-medium px-3 py-1.5 rounded-full border border-green-200 flex items-center">
+          <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+          </svg>
+          Amazon SP-API Developer
+        </span>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button class="md:hidden text-gray-600">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Add spacing for header -->
+  <div class="h-20 md:h-20"></div>
 
   <!-- Hero Section -->
-  <section class="hero-bg h-screen flex flex-col justify-center items-center text-center text-white relative" role="img" aria-label="AI-powered eCommerce platform for Amazon sellers">
-    <div class="relative z-10 max-w-3xl">
-      <h1 class="text-5xl font-bold mb-6">AI-Powered eCommerce Optimization</h1>
-      <p class="text-xl mb-8">
-        IQ5 empowers Amazon sellers with real-time dynamic pricing, inventory-aware strategies, and 
-        predictive insights — all in one secure platform.
+  <section class="hero-bg min-h-screen flex flex-col justify-center items-center text-center text-white relative px-6">
+    <div class="relative z-10 max-w-4xl">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">AI-Powered Amazon Seller Platform</h1>
+      <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto leading-relaxed">
+        Optimize pricing, inventory, and advertising with insights from your Amazon data. 
+        <span class="font-semibold">Fully compliant with Amazon SP-API policies.</span>
       </p>
-      <a href="#solution" class="bg-indigo-600 hover:bg-indigo-700 px-8 py-3 rounded-lg font-semibold shadow transition">
-        Discover More
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#pricing" class="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+          View Transparent Pricing
+        </a>
+        <a href="#features" class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition-all duration-300">
+          Explore Features
+        </a>
+      </div>
+    </div>
+    
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <a href="#problem" class="text-white/70 hover:text-white transition-colors">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
       </a>
     </div>
   </section>
 
-  <!-- Problem Section -->
-  <section class="py-20 px-6 md:px-20 bg-white">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-4xl font-bold text-indigo-600 mb-8">The Problem</h2>
-      <p class="text-lg mb-6">
-        Amazon sellers today face <span class="font-semibold">rising competition</span>, <span class="font-semibold">unpredictable demand</span>, 
-        and <span class="font-semibold">complex advertising alignment</span>. Without intelligent tools, sellers risk losing revenue due to:
-      </p>
-      <ul class="grid md:grid-cols-2 gap-6">
-        <li class="p-6 border rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="font-semibold mb-2">⚖️ Price Volatility</h3>
-          <p>Constant changes in pricing make it hard to stay profitable without over-discounting.</p>
-        </li>
-        <li class="p-6 border rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="font-semibold mb-2">📦 Inventory Mismanagement</h3>
-          <p>Overstocking locks capital, understocking loses customers. Both damage long-term growth.</p>
-        </li>
-        <li class="p-6 border rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="font-semibold mb-2">🎯 Misaligned Advertising</h3>
-          <p>Ad campaigns often push products that are overpriced or out of stock — wasting budgets and trust.</p>
-        </li>
-        <li class="p-6 border rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="font-semibold mb-2">🔎 Lack of Insights</h3>
-          <p>Most sellers lack the tools to forecast demand and optimize performance.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Solution Section -->
-  <section id="solution" class="py-20 px-6 md:px-20 bg-gray-50">
-    <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-4xl font-bold text-indigo-600 mb-8">Our Solution</h2>
-      <p class="text-lg mb-12">IQ5 provides a unified AI-powered platform to solve these challenges for Amazon sellers.</p>
-      <div class="grid md:grid-cols-3 gap-8 text-left">
-        <div class="p-6 border rounded-lg bg-white shadow hover:shadow-lg transition">
-          <h3 class="font-semibold mb-2">⚡ Dynamic Pricing</h3>
-          <p>AI-powered price adjustments in real-time based on demand and seasonality, compliant with Amazon policies.</p>
+  <!-- Trust Indicators -->
+  <section class="py-12 bg-gray-50 border-b border-gray-200">
+    <div class="max-w-5xl mx-auto text-center px-6">
+      <p class="text-gray-600 mb-8 font-medium">Trusted by Amazon sellers worldwide</p>
+      <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70">
+        <div class="flex items-center text-sm text-gray-600">
+          <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+          </svg>
+          Secure SP-API Integration
         </div>
-        <div class="p-6 border rounded-lg bg-white shadow hover:shadow-lg transition">
-          <h3 class="font-semibold mb-2">📦 Inventory-Aware Pricing</h3>
-          <p>Prices adapt to stock levels, ensuring balanced supply and demand while keeping seller data secure.</p>
+        <div class="flex items-center text-sm text-gray-600">
+          <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+          </svg>
+          GDPR & Amazon DPP Compliant
         </div>
-        <div class="p-6 border rounded-lg bg-white shadow hover:shadow-lg transition">
-          <h3 class="font-semibold mb-2">📊 Predictive Forecasting</h3>
-          <p>Accurate demand sensing and sales forecasting powered by AI models using only authorized Amazon data.</p>
-        </div>
-        <div class="p-6 border rounded-lg bg-white shadow hover:shadow-lg transition">
-          <h3 class="font-semibold mb-2">🎯 Advertising Integration</h3>
-          <p>Connects pricing with ad performance to maximize ROI and engagement within the seller’s account.</p>
-        </div>
-        <div class="p-6 border rounded-lg bg-white shadow hover:shadow-lg transition">
-          <h3 class="font-semibold mb-2">🔎 Competitor Insights</h3>
-          <p>Stay ahead of the market with real-time monitoring of competitors and market shifts.</p>
-        </div>
-        <div class="p-6 border rounded-lg bg-white shadow hover:shadow-lg transition">
-          <h3 class="font-semibold mb-2">🌍 Global Scalability</h3>
-          <p>Designed for international expansion with localized insights while keeping all Amazon data private.</p>
+        <div class="flex items-center text-sm text-gray-600">
+          <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+          </svg>
+          99.9% Uptime Guarantee
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section class="py-20 px-6 md:px-20 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-center">
-    <h2 class="text-4xl font-bold mb-4">Ready to Transform Your Amazon Business?</h2>
-    <p class="text-lg mb-8">Join us in shaping the future of online selling with AI-powered insights.</p>
-    <a href="mailto:info@iq5.io" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold shadow hover:scale-105 transition">Get in Touch</a>
+  <!-- Problem Section -->
+  <section id="problem" class="py-20 px-6 md:px-10 bg-gradient-to-br from-blue-50 to-indigo-50">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">The Amazon Growth Challenge</h2>
+      <p class="text-xl text-gray-600 mb-16 max-w-3xl mx-auto">
+        Scaling on Amazon requires more than just listing products. Sellers face complex challenges that limit growth and profitability:
+      </p>
+      
+      <div class="grid md:grid-cols-2 gap-8 text-left">
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 feature-card">
+          <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Pricing Complexity</h3>
+          <p class="text-gray-600 leading-relaxed">Manual repricing can't keep up with market volatility, leading to lost sales or thin margins in competitive categories. Without AI-driven insights, you're either leaving money on the table or pricing yourself out of the market.</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 feature-card">
+          <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Inventory Blindspots</h3>
+          <p class="text-gray-600 leading-relaxed">Stockouts damage rankings while overstocking ties up capital. Without predictive insights, inventory becomes a guessing game that costs you sales and increases storage fees.</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 feature-card">
+          <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Advertising Inefficiency</h3>
+          <p class="text-gray-600 leading-relaxed">PPC campaigns often promote out-of-stock or poorly-priced items, wasting budget and missing conversion opportunities. Disconnected data leads to misaligned marketing strategies.</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 feature-card">
+          <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Data Overload, Insights Underload</h3>
+          <p class="text-gray-600 leading-relaxed">Amazon provides massive amounts of data, but turning it into actionable growth strategies requires advanced analytics most sellers lack. You're sitting on valuable data but can't extract its full potential.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- Solution Section -->
+  <section id="features" class="py-20 px-6 md:px-10 bg-white">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">AI-Powered Solutions</h2>
+      <p class="text-xl text-gray-600 mb-16 max-w-3xl mx-auto">IQ5 provides a unified AI-powered platform to solve these challenges for Amazon sellers with complete SP-API compliance.</p>
+      
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <div class="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100 feature-card">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-4">Dynamic Pricing</h3>
+          <p class="text-gray-600">AI-powered price adjustments in real-time based on demand and seasonality, fully compliant with Amazon policies.</p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100 feature-card">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-4">Inventory-Aware Pricing</h3>
+          <p class="text-gray-600">Prices adapt to stock levels, ensuring balanced supply and demand while keeping seller data secure.</p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100 feature-card">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-4">Predictive Forecasting</h3>
+          <p class="text-gray-600">Accurate demand sensing and sales forecasting powered by AI models using only authorized Amazon data.</p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100 feature-card">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-4">Advertising Integration</h3>
+          <p class="text-gray-600">Connects pricing with ad performance to maximize ROI and engagement within the seller's account.</p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100 feature-card">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-4">Competitor Insights</h3>
+          <p class="text-gray-600">Stay ahead of the market with real-time monitoring of competitors and market shifts using compliant data sources.</p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100 feature-card">
+          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-4">Global Scalability</h3>
+          <p class="text-gray-600">Designed for international expansion with localized insights while keeping all Amazon data private and secure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Sources & Features Section -->
+  <section class="py-20 px-6 md:px-10 bg-gradient-to-br from-gray-50 to-blue-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center text-gray-800 mb-4">How We Use Your Amazon Data</h2>
+      <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">Transparent data usage with full compliance to Amazon SP-API policies</p>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Standard SP-API Features -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-800">Available Now</h3>
+              <p class="text-gray-600">Core features with basic Amazon SP-API access</p>
+            </div>
+          </div>
+          <ul class="space-y-5">
+            <li class="flex items-start">
+              <span class="text-green-500 mr-4 mt-1 flex-shrink-0">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <div>
+                <strong class="text-gray-800">Sales Analytics</strong>
+                <p class="text-gray-600 text-sm mt-1">Using your order and settlement data for revenue tracking and performance insights</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-4 mt-1 flex-shrink-0">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <div>
+                <strong class="text-gray-800">Inventory Management</strong>
+                <p class="text-gray-600 text-sm mt-1">Real-time stock level monitoring and automated restock alerts</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-4 mt-1 flex-shrink-0">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <div>
+                <strong class="text-gray-800">Advertising Performance</strong>
+                <p class="text-gray-600 text-sm mt-1">SP-API advertising data for campaign optimization and budget allocation</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-4 mt-1 flex-shrink-0">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <div>
+                <strong class="text-gray-800">Financial Analytics</strong>
+                <p class="text-gray-600 text-sm mt-1">Comprehensive finance data analysis for profitability tracking and cash flow insights</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-4 mt-1 flex-shrink-0">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <div>
+                <strong class="text-gray-800">Order Management</strong>
+                <p class="text-gray-600 text-sm mt-1">Complete order lifecycle tracking from placement to fulfillment and settlement</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Future Analytics Features -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-primary-200 relative overflow-hidden data-feature">
+          <div class="absolute top-0 right-0 bg-gradient-to-r from-primary-600 to-purple-600 text-white text-xs font-bold px-4 py-1 rounded-bl-lg">
+            FUTURE ROADMAP
+          </div>
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+              <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-800">Advanced Analytics</h3>
+              <p class="text-gray-600">Planned features for enhanced insights</p>
+            </div>
+          </div>
+          <ul class="space-y-5 mb-6">
+            <li class="flex items-start">
+              <span class="text-primary-500 mr-4 mt-1 flex-shrink-0">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <div>
+                <strong class="text-gray-800">Market Trend Analysis</strong>
+                <p class="text-gray-600 text-sm mt-1">Advanced market insights and trend identification capabilities</p>
+                <span class="coming-soon-badge inline-block mt-1">Coming Soon</span>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary-500 mr-4 mt-1 flex-shrink-0">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <div>
+                <strong class="text-gray-800">Customer Behavior Insights</strong>
+                <p class="text-gray-600 text-sm mt-1">Enhanced customer analytics and purchasing pattern analysis</p>
+                <span class="coming-soon-badge inline-block mt-1">Coming Soon</span>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary-500 mr-4 mt-1 flex-shrink-0">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <div>
+                <strong class="text-gray-800">Competitive Intelligence</strong>
+                <p class="text-gray-600 text-sm mt-1">Advanced competitor analysis and market positioning insights</p>
+                <span class="coming-soon-badge inline-block mt-1">Coming Soon</span>
+              </div>
+            </li>
+          </ul>
+          
+          <!-- Brand Analytics Integration Note -->
+          <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-4">
+            <div class="flex items-start">
+              <svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+              </svg>
+              <div>
+                <p class="text-blue-700 text-sm font-medium">Brand Analytics Integration</p>
+                <p class="text-blue-600 text-xs mt-1">Future roadmap includes enhanced consumer insights and market analytics using Amazon Brand Analytics data (subject to Amazon SP-API approval).</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-auto pt-4 border-t border-gray-100">
+            <div class="flex items-center text-sm text-blue-600">
+              <svg class="w-4 h-4 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="font-medium">Advanced features planned for future development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-12 bg-blue-50 border border-blue-200 rounded-2xl p-8 text-center">
+        <h3 class="text-2xl font-bold text-blue-800 mb-4">Full Amazon SP-API Compliance</h3>
+        <p class="text-blue-700 mb-6 max-w-2xl mx-auto">All data usage strictly follows Amazon's Acceptable Use Policy (AUP) and Data Protection Policy (DPP). We never share data between seller accounts or use it for unauthorized purposes.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <span class="bg-white text-blue-700 px-4 py-2 rounded-lg text-sm font-medium border border-blue-200">AUP Compliant</span>
+          <span class="bg-white text-blue-700 px-4 py-2 rounded-lg text-sm font-medium border border-blue-200">DPP Compliant</span>
+          <span class="bg-white text-blue-700 px-4 py-2 rounded-lg text-sm font-medium border border-blue-200">GDPR Ready</span>
+          <span class="bg-white text-blue-700 px-4 py-2 rounded-lg text-sm font-medium border border-blue-200">Data Encrypted</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-20 px-6 md:px-10 bg-white">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">Transparent Pricing</h2>
+      <p class="text-xl text-gray-600 mb-16 max-w-3xl mx-auto">Clear pricing with no hidden fees. All plans include secure Amazon SP-API integration.</p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Starter Plan -->
+        <div class="border border-gray-200 rounded-2xl shadow-lg bg-white p-8 flex flex-col pricing-card">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Starter</h3>
+          <p class="text-gray-600 mb-6">Essential tools for new Amazon sellers</p>
+          <div class="mb-8">
+            <span class="text-4xl font-bold text-gray-800">$99</span>
+            <span class="text-gray-600 font-medium">/mo</span>
+          </div>
+          <ul class="text-left space-y-4 flex-1 mb-8">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Sales & Order Analytics</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Basic Inventory Management</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Email Support</span>
+            </li>
+            <li class="flex items-start text-gray-400">
+              <svg class="w-5 h-5 text-gray-400 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span>Advertising Integration</span>
+            </li>
+            <li class="flex items-start text-gray-400">
+              <svg class="w-5 h-5 text-gray-400 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span>Advanced Analytics</span>
+            </li>
+          </ul>
+          <a href="mailto:info@iq5.io?subject=Starter Plan Inquiry&body=Hello, I'm interested in the Starter plan for $99/month" class="w-full bg-gray-100 text-gray-800 py-4 rounded-xl font-semibold hover:bg-gray-200 transition-colors text-center block">
+            Start with Starter Package
+          </a>
+        </div>
+
+        <!-- Professional Plan -->
+        <div class="border-2 border-primary-500 rounded-2xl shadow-xl bg-white p-8 flex flex-col pricing-card relative">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary-500 text-white text-xs font-bold px-6 py-2 rounded-full shadow-lg">Most Popular</div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Professional</h3>
+          <p class="text-gray-600 mb-6">Advanced insights with comprehensive analytics</p>
+          <div class="mb-8">
+            <span class="text-4xl font-bold text-gray-800">$299</span>
+            <span class="text-gray-600 font-medium">/mo</span>
+          </div>
+          <ul class="text-left space-y-4 flex-1 mb-8">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Everything in Starter</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Advanced Inventory Analytics</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Advertising Optimization</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Competitor Price Monitoring</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Predictive Analytics</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Priority Support</span>
+            </li>
+            <li class="flex items-start text-gray-400">
+              <svg class="w-5 h-5 text-gray-400 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span><span class="line-through">Advanced Market Insights</span> <span class="coming-soon-badge ml-2">Future</span></span>
+            </li>
+          </ul>
+          <a href="mailto:info@iq5.io?subject=Professional Plan Inquiry&body=Hello, I'm interested in the Professional plan for $299/month" class="w-full bg-primary-500 text-white py-4 rounded-xl font-semibold hover:bg-primary-600 transition-colors shadow-lg text-center block">
+            Start Free Trial - Professional
+          </a>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="border border-gray-200 rounded-2xl shadow-lg bg-white p-8 flex flex-col pricing-card">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Enterprise</h3>
+          <p class="text-gray-600 mb-6">Advanced features for high-volume sellers</p>
+          <div class="mb-8">
+            <span class="text-4xl font-bold text-gray-800">$599</span>
+            <span class="text-gray-600 font-medium">/mo</span>
+          </div>
+          <ul class="text-left space-y-4 flex-1 mb-8">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Everything in Professional</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Custom API Integrations</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Dedicated Account Manager</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>SLA Guarantee</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>White-label Reporting</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Advanced Analytics Dashboard</span>
+            </li>
+            <li class="flex items-start text-gray-400">
+              <svg class="w-5 h-5 text-gray-400 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span><span class="line-through">Enhanced Market Analytics</span> <span class="coming-soon-badge ml-2">Future</span></span>
+            </li>
+          </ul>
+          <a href="mailto:info@iq5.io?subject=Enterprise Plan Inquiry&body=Hello, I'm interested in the Enterprise plan for $599/month" class="w-full bg-gray-800 text-white py-4 rounded-xl font-semibold hover:bg-gray-900 transition-colors text-center block">
+            Start Free Trial - Enterprise
+          </a>
+        </div>
+      </div>
+      
+      <!-- ADDED: No Hidden Fees Transparency Section -->
+      <div class="mt-12 bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 rounded-2xl p-8 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute top-0 right-0 w-32 h-32 bg-green-100 rounded-full -translate-y-16 translate-x-16 opacity-50"></div>
+        <div class="absolute bottom-0 left-0 w-24 h-24 bg-green-100 rounded-full translate-y-12 -translate-x-12 opacity-30"></div>
+        
+<div class="relative z-10 text-center">
+  <div class="flex justify-center mb-6">
+    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center shadow-lg">
+      <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+      </svg>
+    </div>
+  </div>
+  
+  <h3 class="text-2xl font-bold text-green-800 mb-3">Complete Pricing Transparency</h3>
+  <p class="text-green-700 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
+    What you see is what you pay. No surprises, no hidden fees—just straightforward pricing for powerful Amazon analytics.
+  </p>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+    <div class="bg-white rounded-xl p-6 shadow-sm border border-green-100 hover:shadow-md transition-shadow">
+      <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center mb-4 mx-auto">
+        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <h4 class="font-semibold text-green-800 mb-2 text-center">No Setup Fees</h4>
+      <p class="text-green-600 text-sm text-center">Zero installation or setup costs</p>
+    </div>
+    
+    <div class="bg-white rounded-xl p-6 shadow-sm border border-green-100 hover:shadow-md transition-shadow">
+      <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center mb-4 mx-auto">
+        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+        </svg>
+      </div>
+      <h4 class="font-semibold text-green-800 mb-2 text-center">No Transaction Fees</h4>
+      <p class="text-green-600 text-sm text-center">No per-sale or volume charges</p>
+    </div>
+    
+    <div class="bg-white rounded-xl p-6 shadow-sm border border-green-100 hover:shadow-md transition-shadow">
+      <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center mb-4 mx-auto">
+        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+        </svg>
+      </div>
+      <h4 class="font-semibold text-green-800 mb-2 text-center">No Hidden Costs</h4>
+      <p class="text-green-600 text-sm text-center">All features included in price</p>
+    </div>
+    
+    <div class="bg-white rounded-xl p-6 shadow-sm border border-green-100 hover:shadow-md transition-shadow">
+      <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center mb-4 mx-auto">
+        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+      </div>
+      <h4 class="font-semibold text-green-800 mb-2 text-center">Cancel Anytime</h4>
+      <p class="text-green-600 text-sm text-center">No contracts or lock-in periods</p>
+    </div>
+  </div>
+</div>
+      </div>
+      
+      <div class="mt-12 text-center text-gray-600 max-w-2xl mx-auto">
+        <p>All plans include secure Amazon SP-API integration, data encryption, and compliance with Amazon's policies. Need help choosing? <a href="#contact" class="text-primary-600 font-medium hover:underline">Contact our team</a>.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Call to Action -->
+<section id="contact" class="py-20 px-6 md:px-10 bg-gradient-to-r from-primary-600 to-primary-700 text-white text-center">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold mb-6">Ready to Transform Your Amazon Business?</h2>
+    <p class="text-xl mb-10 max-w-2xl mx-auto">Join thousands of Amazon sellers using IQ5 to optimize their pricing, inventory, and advertising with AI-powered insights.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#pricing" class="bg-white text-primary-600 px-8 py-4 rounded-xl font-semibold shadow-lg hover:scale-105 transition-all duration-300 text-lg">
+        View Pricing Plans
+      </a>
+      <a href="#contact-form" class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/20 transition-all duration-300 text-lg">
+        Contact Sales
+      </a>
+    </div>
+    <p class="mt-8 text-primary-100">Have questions? Email us at <a href="mailto:info@iq5.io" class="text-white font-semibold underline">info@iq5.io</a></p>
+  </div>
+</section>
+
+<!-- Contact Form Section -->
+<section id="contact-form" class="py-20 px-6 md:px-10 bg-gray-50">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">Our team is here to help you get started and answer any questions about our platform.</p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+      <div class="grid lg:grid-cols-5">
+        <!-- Contact Info Sidebar -->
+        <div class="lg:col-span-2 bg-primary-50 p-8">
+          <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+          
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-800 mb-1">Sales & General Inquiries</h4>
+                <p class="text-gray-600 text-sm mb-1">Mon-Fri, 9AM-6PM CET</p>
+                <a href="mailto:info@iq5.io" class="text-primary-600 hover:underline font-medium">info@iq5.io</a>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-800 mb-1">Technical Support</h4>
+                <p class="text-gray-600 text-sm mb-1">24/7 for active customers</p>
+                <a href="mailto:support@iq5.io" class="text-primary-600 hover:underline font-medium">support@iq5.io</a>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-800 mb-1">Office Location</h4>
+                <p class="text-gray-600 text-sm">Vinkenburgstraat 2A</p>
+                <p class="text-gray-600 text-sm">3512AB Utrecht, Netherlands</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trust Section -->
+          <div class="mt-8 pt-6 border-t border-primary-200">
+            <h4 class="font-semibold text-gray-800 mb-4">Why Choose IQ5?</h4>
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm text-gray-700">Amazon SP-API Developer</span>
+              </div>
+              <div class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm text-gray-700">GDPR & DPP Compliant</span>
+              </div>
+              <div class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm text-gray-700">Enterprise-Grade Security</span>
+              </div>
+              <div class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm text-gray-700">99.9% Uptime Guarantee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-3 p-8">
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">Send us a Message</h3>
+          <p class="text-gray-600 mb-6">We'll get back to you within 24 hours</p>
+          
+          <form id="contactForm" class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                <input type="text" id="name" name="name" required 
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
+                       placeholder="Your full name">
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                <input type="email" id="email" name="email" required 
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
+                       placeholder="your.email@example.com">
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Company Name</label>
+                <input type="text" id="company" name="company"
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
+                       placeholder="Your company name">
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                <input type="tel" id="phone" name="phone"
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
+                       placeholder="+1 (555) 000-0000">
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Inquiry Type *</label>
+                <select id="subject" name="subject" required 
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
+                  <option value="">Select inquiry type</option>
+                  <option value="sales">Sales & Pricing</option>
+                  <option value="demo">Request Demo</option>
+                  <option value="technical">Technical Support</option>
+                  <option value="billing">Billing Question</option>
+                  <option value="partnership">Partnership</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div>
+                <label for="plan" class="block text-sm font-medium text-gray-700 mb-2">Plan Interest</label>
+                <select id="plan" name="plan"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
+                  <option value="">Select plan interest</option>
+                  <option value="starter">Starter - $99/month</option>
+                  <option value="professional">Professional - $299/month</option>
+                  <option value="enterprise">Enterprise - $599/month</option>
+                  <option value="not-sure">Not sure yet</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+              <textarea id="message" name="message" rows="4" required 
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
+                        placeholder="Tell us about your Amazon business and how we can help..."></textarea>
+            </div>
+
+            <button type="submit" 
+                    class="w-full bg-primary-500 text-white py-4 rounded-xl font-semibold hover:bg-primary-600 transition-colors shadow-lg text-lg">
+              Send Message
+            </button>
+            
+            <p class="text-xs text-gray-500 text-center">
+              By submitting this form, you agree to our 
+              <a href="privacy.html" class="text-primary-600 hover:underline">Privacy Policy</a> 
+              and 
+              <a href="terms.html" class="text-primary-600 hover:underline">Terms of Service</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
   <!-- Footer -->
-  <footer class="py-6 text-center bg-gray-800 text-gray-400 text-sm">
-    <p>© 2025 IQ5 B.V. | Vinkenburgstraat 2A, 3512AB Utrecht, Netherlands</p>
-    <br/>
-    <p>
-      <a href="privacy.html" class="hover:underline text-gray-300">Privacy & Security</a> | 
-      <a href="terms.html" class="hover:underline text-gray-300">Terms of Service</a>
-    </p>
-    <br/>
-    <br/>
+  <footer class="bg-gray-900 text-gray-400">
+    <div class="max-w-7xl mx-auto px-6 py-8 grid md:grid-cols-4 gap-6 text-center md:text-left">
+      
+      <!-- Company Info -->
+      <div>
+        <div class="flex items-center space-x-2 mb-3 justify-center md:justify-start">
+          <span class="text-white font-bold text-sm">IQ5 B.V.</span>
+        </div>
+        <p class="text-sm mb-1">Vinkenburgstraat 2A</p>
+        <p class="text-sm mb-1">3512AB Utrecht, Netherlands</p>
+        <p class="text-sm mt-2">Chamber of Commerce (KvK): 12345678</p>
+        <p class="text-sm">VAT: NL123456789B01</p>
+      </div>
+
+      <!-- Product -->
+      <div>
+        <h3 class="text-white font-semibold text-sm mb-3">Product</h3>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+          <li><a href="#pricing" class="hover:text-white transition-colors">Pricing</a></li>
+          <li><a href="privacy.html" class="hover:text-white transition-colors">Security</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div>
+        <h3 class="text-white font-semibold text-sm mb-3">Resources</h3>
+        <ul class="space-y-1 text-sm">
+          <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy & Security</a></li>
+          <li><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Legal -->
+      <div>
+        <h3 class="text-white font-semibold text-sm mb-3">Company</h3>
+        <ul class="space-y-1 text-sm mb-3">
+          <li><a href="#contact" class="hover:text-white transition-colors">Contact Us</a></li>
+        </ul>
+        <div class="mt-4">
+          <p class="text-sm mb-1">Email: <a href="mailto:info@iq5.io" class="text-primary-400 hover:underline">info@iq5.io</a></p>
+          <p class="text-sm">Support: <a href="mailto:support@iq5.io" class="text-primary-400 hover:underline">support@iq5.io</a></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="border-t border-gray-800 mt-6 pt-4 pb-4 text-center text-gray-500 text-sm">
+      <p>© 2025 IQ5 B.V. All rights reserved. | Fully compliant with Amazon SP-API AUP and DPP policies</p>
+    </div>
   </footer>
 
-  <script>feather.replace()</script>
+  <script>
+    // Simple scroll animation for elements
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add fade-in animation to elements when they come into view
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, observerOptions);
+      
+      // Observe elements for animation
+      document.querySelectorAll('.feature-card, .pricing-card').forEach(el => {
+        el.style.opacity = 0;
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(el);
+      });
+    });
+  </script>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        company: document.getElementById('company').value,
+        phone: document.getElementById('phone').value,
+        subject: document.getElementById('subject').value,
+        plan: document.getElementById('plan').value,
+        message: document.getElementById('message').value
+      };
+      
+      // Show loading
+      const button = this.querySelector('button[type="submit"]');
+      button.textContent = 'Sending...';
+      button.disabled = true;
+      
+      try {
+        // ✅ PUT YOUR GOOGLE SCRIPT URL HERE
+        const API_URL = 'https://script.google.com/macros/s/AKfycbw_m0Ea5Vkm4WBTOd3pOOXujg6ieULM8Cjf5M1p55pGWqiW48h4QFeyRnGa1L5ctG-MQA/exec';
+        
+        const response = await fetch(API_URL, {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(formData)
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+          alert('✅ Message sent! We\'ll contact you soon.');
+          this.reset();
+        }
+        
+      } catch (error) {
+        alert('❌ Error sending message. Please email us directly at info@iq5.io');
+      } finally {
+        button.textContent = 'Send Message';
+        button.disabled = false;
+      }
+    });
+  </script>
+
 </body>
 </html>

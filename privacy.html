@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="IQ5 Privacy & Security policy. We protect Amazon seller data according to SP-API policies, GDPR, and industry best practices.">
-  <title>IQ5 | Privacy & Security</title>
+  <meta name="description" content="IQ5 Privacy Policy - Fully compliant with Amazon SP-API Data Protection Policy (DPP) and GDPR requirements.">
+  <meta name="keywords" content="IQ5, Privacy Policy, Amazon, SP-API, DPP, GDPR, Data Protection, Security">
+  <meta name="author" content="IQ5 B.V.">
+  <title>IQ5 | Privacy Policy - Amazon DPP Compliant</title>
   <link rel="canonical" href="https://iq5.io/privacy.html">
 
   <!-- Favicon -->
@@ -15,127 +17,588 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="IQ5 | AI for eCommerce Optimization">
-  <meta property="og:description" content="IQ5 empowers Amazon sellers with AI-powered dynamic pricing, inventory-aware strategies, and predictive insights — all in one powerful platform.">
-  <meta property="og:url" content="https://iq5.io">
+  <meta property="og:title" content="IQ5 | Privacy Policy - Amazon DPP Compliant">
+  <meta property="og:description" content="IQ5 Privacy Policy fully compliant with Amazon SP-API Data Protection Policy and GDPR requirements.">
+  <meta property="og:url" content="https://iq5.io/privacy.html">
   <meta property="og:image" content="https://iq5.io/img/logo-2x1024.png">
   <meta property="og:image:width" content="1024">
   <meta property="og:image:height" content="1024">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="IQ5 | AI for eCommerce Optimization">
-  <meta name="twitter:description" content="IQ5 empowers Amazon sellers with AI-powered dynamic pricing, inventory-aware strategies, and predictive insights — all in one powerful platform.">
+  <meta name="twitter:title" content="IQ5 | Privacy Policy - Amazon DPP Compliant">
+  <meta name="twitter:description" content="IQ5 Privacy Policy fully compliant with Amazon SP-API Data Protection Policy and GDPR requirements.">
   <meta name="twitter:image" content="https://iq5.io/img/logo-2x1024.png">
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+    }
     .hero-bg {
-      background: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 50%, #6366f1 100%);
       position: relative;
+      overflow: hidden;
+    }
+    .hero-bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .policy-card {
+      transition: all 0.3s ease;
+    }
+    .policy-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+    .legal-highlight {
+      background-color: #f0f9ff;
+      border-left: 4px solid #0ea5e9;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 0.375rem;
+      font-size: 0.875rem;
+    }
+    /* Smaller font sizes for dense content */
+    .policy-content {
+      font-size: 0.875rem;
+      line-height: 1.5;
+      color: #4b5563;
+    }
+    .policy-content h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: #1f2937;
+    }
+    .policy-content h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 1rem 0 0.5rem 0;
+      color: #374151;
+    }
+    .policy-content ul {
+      font-size: 0.875rem;
+    }
+    .policy-content li {
+      margin-bottom: 0.375rem;
     }
   </style>
-  
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/feather-icons"></script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "IQ5 B.V.",
-    "url": "https://iq5.io",
-    "sameAs": [],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "email": "info@iq5.io",
-      "contactType": "customer support"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Vinkenburgstraat 2A",
-      "postalCode": "3512AB",
-      "addressLocality": "Utrecht",
-      "addressCountry": "Netherlands"
-    }
-  }
-  </script>
 </head>
-<body class="bg-gray-50 text-gray-700">
-
-  <!-- Hero Section (Full size) -->
-  <section class="hero-bg h-72 md:h-96 flex flex-col justify-center items-center text-center text-white relative" role="img" aria-label="AI-powered eCommerce platform for Amazon sellers">
-    <div class="relative z-10 max-w-3xl px-6">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Privacy</h1>
-      <p class="text-lg md:text-xl mb-6">
-        Protecting Amazon data and user information is our top priority. We strictly follow SP-API policies and industry best practices.
-      </p>
-    </div>
-    <div class="absolute inset-0 bg-black opacity-60"></div>
-  </section>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
   <!-- Header -->
-  <header class="bg-indigo-600 text-white p-4 text-center">
-    <nav class="mt-1">
-      <a href="index.html" class="text-white mx-2 md:mx-4 hover:underline">Home</a>
-      <a href="#privacy" class="text-white mx-2 md:mx-4 hover:underline">Privacy & Security</a>
-      <a href="terms.html" class="text-white mx-2 md:mx-4 hover:underline">Terms</a>
-    </nav>
+  <header class="fixed top-0 left-0 w-full bg-gray-50 shadow-sm z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      
+      <!-- Logo with Company Name -->
+      <a href="index.html" class="flex items-center space-x-3">
+        <img src="img/logo-96x96.png" alt="IQ5" class="w-12 h-12">
+          <span class="text-xl font-bold text-gray-800">IQ5</span>
+          <span class="text-sm text-gray-600 font-bold">B.V.</span>
+      </a>
+
+      <!-- Primary Navigation -->
+      <nav class="hidden md:flex items-center space-x-8 font-medium">
+        <a href="index.html" class="text-gray-600 hover:text-primary-600 transition-colors">Home</a>
+        <a href="index.html#features" class="text-gray-600 hover:text-primary-600 transition-colors">Features</a>
+        <a href="index.html#pricing" class="text-gray-600 hover:text-primary-600 transition-colors">Pricing</a>
+        <a href="index.html#contact" class="text-gray-600 hover:text-primary-600 transition-colors">Contact</a>
+        <span class="bg-green-100 text-green-800 text-xs font-medium px-3 py-1.5 rounded-full border border-green-200 flex items-center">
+          <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+          </svg>
+          Amazon SP-API Developer
+        </span>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button class="md:hidden text-gray-600">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
   </header>
 
-  <!-- Privacy & Security Content (Smaller font) -->
-  <section id="privacy" class="py-10 px-4 md:px-16 max-w-4xl mx-auto space-y-5 text-sm md:text-base">
-    <h2 class="text-2xl md:text-3xl font-bold text-indigo-600">Our Privacy & Security Commitment</h2>
+  <!-- Add spacing for header -->
+  <div class="h-16 md:h-16"></div>
 
-    <div class="space-y-4">
-      <h3 class="text-xl font-semibold mt-4">1. Data Collection</h3>
-      <p>
-        IQ5 collects Amazon SP-API data only from authorized users who explicitly grant access. Unauthorized access is strictly forbidden and may result in immediate suspension and legal action.
+  <!-- Hero Section -->
+  <section class="hero-bg min-h-[40vh] flex flex-col justify-center items-center text-center text-white relative px-6">
+    <div class="relative z-10 max-w-4xl">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">Privacy & Data Protection Policy</h1>
+      <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+        Fully compliant with Amazon SP-API Data Protection Policy and GDPR requirements
       </p>
+      <a href="#privacy-content" class="bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-sm">
+        Read Policy
+      </a>
+    </div>
+  </section>
 
-      <h3 class="text-xl font-semibold mt-4">2. Data Usage</h3>
-      <p>
-        Data is processed internally to provide analytics, pricing optimization, inventory management, and advertising insights. Data is never sold or shared with third parties.
-      </p>
+  <!-- Privacy Content Section -->
+  <section id="privacy-content" class="py-16 px-6 md:px-10 bg-white">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Compliance Header -->
+      <div class="border-b border-gray-200 pb-6 mb-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-2">IQ5 Privacy & Data Protection Policy</h2>
+        <p class="text-gray-600 mb-4 text-sm">Last Updated: January 2025 | Version 1.0</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-green-100 text-green-800 text-xs font-medium px-3 py-1 rounded-full border border-green-200">Amazon DPP Compliant</span>
+          <span class="bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full border border-blue-200">GDPR Compliant</span>
+          <span class="bg-purple-100 text-purple-800 text-xs font-medium px-3 py-1 rounded-full border border-purple-200">TLS 1.2+ Encryption</span>
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-3 py-1 rounded-full border border-indigo-200">AES-256 Encryption</span>
+        </div>
+      </div>
 
-      <h3 class="text-xl font-semibold mt-4">3. Data Security</h3>
-      <ul class="list-disc ml-6">
-        <li>Encryption in transit and at rest ensures complete protection.</li>
-        <li>Access is restricted based on job responsibilities.</li>
-        <li>Credentials are never hardcoded or shared publicly.</li>
-        <li>Network security prevents unauthorized access attempts.</li>
-        <li>Protocols are regularly reviewed to meet industry best practices.</li>
-      </ul>
+      <div class="policy-content space-y-8">
+        <!-- 1. Introduction -->
+        <div class="policy-card bg-gradient-to-br from-white to-gray-50 p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="flex items-center mb-4">
+            <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
+              <span class="text-primary-600 font-semibold">1</span>
+            </div>
+            Introduction & Scope
+          </h3>
+          <div>
+            <p>This Privacy Policy governs the receipt, storage, usage, transfer, and disposal of Information accessed through Amazon Selling Partner API (SP-API). IQ5 B.V. ("we," "our," or "us") is committed to protecting the privacy and security of Amazon seller data in compliance with Amazon's Data Protection Policy (DPP), Acceptable Use Policy (AUP), and applicable data protection laws including GDPR.</p>
+          </div>
+        </div>
 
-      <h3 class="text-xl font-semibold mt-4">4. Incident Response</h3>
-      <p>
-        Any unauthorized access, breach attempt, or security incident is immediately reported to <a href="mailto:security@amazon.com" class="text-indigo-600 hover:underline">security@amazon.com</a> and mitigated according to best practices.
-      </p>
+        <!-- 2. Amazon DPP Compliance -->
+        <div class="policy-card bg-gradient-to-br from-white to-gray-50 p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="flex items-center mb-4">
+            <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
+              <span class="text-primary-600 font-semibold">2</span>
+            </div>
+            Amazon Data Protection Policy Compliance
+          </h3>
+          <div>
+            <p class="mb-4">IQ5 fully complies with Amazon's Data Protection Policy requirements for SP-API developers:</p>
+            
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+              <div class="bg-white p-4 rounded-lg border border-gray-200">
+                <h4 class="font-semibold text-gray-800 mb-2 flex items-center text-sm">
+                  <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Network Protection
+                </h4>
+                <p class="text-gray-600 text-xs">Firewalls, IDS/IPS, regular security assessments per DPP Section 1.1</p>
+              </div>
+              <div class="bg-white p-4 rounded-lg border border-gray-200">
+                <h4 class="font-semibold text-gray-800 mb-2 flex items-center text-sm">
+                  <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Access Management
+                </h4>
+                <p class="text-gray-600 text-xs">Unique user IDs, no shared credentials, quarterly access reviews</p>
+              </div>
+              <div class="bg-white p-4 rounded-lg border border-gray-200">
+                <h4 class="font-semibold text-gray-800 mb-2 flex items-center text-sm">
+                  <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Encryption Standards
+                </h4>
+                <p class="text-gray-600 text-xs">TLS 1.2+ in transit, AES-256 at rest per DPP Sections 1.5 & 2.4</p>
+              </div>
+              <div class="bg-white p-4 rounded-lg border border-gray-200">
+                <h4 class="font-semibold text-gray-800 mb-2 flex items-center text-sm">
+                  <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  Incident Response
+                </h4>
+                <p class="text-gray-600 text-xs">24-hour notification to Amazon, documented procedures per DPP 1.6</p>
+              </div>
+            </div>
 
-      <h3 class="text-xl font-semibold mt-4">5. Legal Compliance</h3>
-      <p>
-        We comply with Amazon SP-API policies, Acceptable Use Policy, GDPR, and other applicable data protection laws. Compliance documentation is maintained and audit-ready.
-      </p>
+            <div class="legal-highlight">
+              <strong>Compliance Note:</strong> All security measures are implemented in accordance with DPP Sections 1.1-1.8 and are regularly audited for compliance.
+            </div>
+          </div>
+        </div>
 
-      <h3 class="text-xl font-semibold mt-4">6. User Responsibility</h3>
-      <p>
-        Authorized users must not bypass controls, redistribute data, or use Amazon information for unauthorized purposes. Misuse may result in suspension, termination, or legal consequences.
-      </p>
+        <!-- 3. Data Collection & Processing -->
+        <div class="policy-card bg-gradient-to-br from-white to-gray-50 p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="flex items-center mb-4">
+            <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
+              <span class="text-primary-600 font-semibold">3</span>
+            </div>
+            Data Collection & Processing
+          </h3>
+          <div>
+            <h4>3.1 Types of Data Processed</h4>
+            <p class="mb-4">IQ5 processes the following Amazon seller data through authorized SP-API access:</p>
+            <ul class="list-disc ml-6 space-y-2 mb-4">
+              <li><strong>Order Information:</strong> Sales data, order details, customer shipping information (PII limited to fulfillment purposes)</li>
+              <li><strong>Inventory Data:</strong> Stock levels, product listings, fulfillment metrics</li>
+              <li><strong>Pricing Information:</strong> Product prices, competitor pricing, buy box statistics</li>
+              <li><strong>Advertising Data:</strong> Campaign performance, advertising cost of sale (ACOS), keyword metrics</li>
+              <li><strong>Business Analytics:</strong> Sales performance, revenue metrics, growth trends</li>
+            </ul>
 
-      <p class="mt-4 font-semibold text-red-600 text-center">
-        ⚠️ Unauthorized data access or misuse is strictly monitored and reported to Amazon. Legal consequences will follow any violation.
-      </p>
+            <h4>3.2 Personally Identifiable Information (PII) Handling</h4>
+            <p class="mb-4">In compliance with DPP Section 2:</p>
+            <ul class="list-disc ml-6 space-y-2">
+              <li>PII is processed only for order fulfillment and tax compliance purposes</li>
+              <li>PII retention limited to 30 days post-order delivery unless required by law</li>
+              <li>No use of PII for marketing, customer targeting, or external data services</li>
+              <li>Strict access controls and encryption for all PII data stores</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 4. Data Usage Purposes -->
+        <div class="policy-card bg-gradient-to-br from-white to-gray-50 p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="flex items-center mb-4">
+            <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
+              <span class="text-primary-600 font-semibold">4</span>
+            </div>
+            Data Usage & Processing Purposes
+          </h3>
+          <div>
+            <p class="mb-4">Amazon seller data is used exclusively for providing authorized services:</p>
+            <ul class="list-disc ml-6 space-y-2 mb-4">
+              <li><strong>Pricing Optimization:</strong> AI-driven repricing algorithms using sales velocity and competition data</li>
+              <li><strong>Inventory Management:</strong> Stock level forecasting and restocking recommendations</li>
+              <li><strong>Advertising Optimization:</strong> Campaign performance analysis and budget allocation</li>
+              <li><strong>Business Intelligence:</strong> Sales analytics, performance reporting, growth insights</li>
+              <li><strong>Compliance Reporting:</strong> Tax calculation and regulatory requirement fulfillment</li>
+            </ul>
+
+            <div class="legal-highlight">
+              <strong>Restricted Usage:</strong> We do not aggregate data across seller accounts, sell data to third parties, or use data for unauthorized purposes as prohibited by AUP Sections 4.3-4.5.
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Data Security Measures -->
+        <div class="policy-card bg-gradient-to-br from-white to-gray-50 p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="flex items-center mb-4">
+            <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
+              <span class="text-primary-600 font-semibold">5</span>
+            </div>
+            Comprehensive Security Measures
+          </h3>
+          <div>
+            <h4>5.1 Technical Security Controls</h4>
+            <ul class="list-disc ml-6 space-y-2 mb-4">
+              <li><strong>Network Security:</strong> Firewalls, intrusion detection/prevention systems, regular vulnerability scanning</li>
+              <li><strong>Access Controls:</strong> Role-based access, principle of least privilege, MFA enforcement</li>
+              <li><strong>Encryption:</strong> End-to-end encryption for data in transit and at rest</li>
+              <li><strong>Monitoring:</strong> Real-time security monitoring and anomaly detection</li>
+            </ul>
+
+            <h4>5.2 Administrative Controls</h4>
+            <ul class="list-disc ml-6 space-y-2">
+              <li><strong>Employee Training:</strong> Annual data protection and security awareness training</li>
+              <li><strong>Access Reviews:</strong> Quarterly access right verification and certification</li>
+              <li><strong>Incident Response:</strong> Documented procedures for security incident handling</li>
+              <li><strong>Change Management:</strong> Formal processes for system and configuration changes</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 6. Data Retention & Deletion -->
+        <div class="policy-card bg-gradient-to-br from-white to-gray-50 p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="flex items-center mb-4">
+            <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
+              <span class="text-primary-600 font-semibold">6</span>
+            </div>
+            Data Retention & Secure Deletion
+          </h3>
+          <div>
+            <h4>6.1 Retention Periods</h4>
+            <ul class="list-disc ml-6 space-y-2 mb-4">
+              <li><strong>Operational Data:</strong> Retained for active service delivery duration</li>
+              <li><strong>PII Data:</strong> Maximum 30 days post-order delivery (DPP Section 2.1)</li>
+              <li><strong>Analytical Data:</strong> Aggregated and anonymized after service termination</li>
+              <li><strong>Legal Requirements:</strong> Retained only as required by tax or regulatory laws</li>
+            </ul>
+
+            <h4>6.2 Secure Deletion Procedures</h4>
+            <p class="mb-4">In compliance with DPP Section 1.7:</p>
+            <ul class="list-disc ml-6 space-y-2">
+              <li>Permanent deletion of Amazon data within 30 days of request</li>
+              <li>Removal of all live instances within 90 days of termination</li>
+              <li>NIST 800-88 compliant sanitization processes</li>
+              <li>Written certification of data destruction provided upon request</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 7. Incident Response -->
+        <div class="policy-card bg-gradient-to-br from-white to-gray-50 p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="flex items-center mb-4">
+            <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
+              <span class="text-primary-600 font-semibold">7</span>
+            </div>
+            Security Incident Response
+          </h3>
+          <div>
+            <p class="mb-4">IQ5 maintains a comprehensive Security Incident Response Plan in accordance with DPP Section 1.6:</p>
+            <ul class="list-disc ml-6 space-y-2">
+              <li><strong>24-Hour Notification:</strong> Immediate reporting to Amazon (security@amazon.com) upon incident detection</li>
+              <li><strong>Investigation Procedures:</strong> Detailed incident analysis and root cause determination</li>
+              <li><strong>Remediation Actions:</strong> Immediate containment and corrective measures</li>
+              <li><strong>Documentation:</strong> Complete incident documentation and evidence preservation</li>
+              <li><strong>Prevention Measures:</strong> Implementation of controls to prevent recurrence</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 8. Third-Party Data Sharing -->
+        <div class="policy-card bg-gradient-to-br from-white to-gray-50 p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="flex items-center mb-4">
+            <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
+              <span class="text-primary-600 font-semibold">8</span>
+            </div>
+            Third-Party Data Sharing & Transfers
+          </h3>
+          <div>
+            <p class="mb-4">IQ5 does not sell, rent, or share Amazon seller data with third parties except:</p>
+            <ul class="list-disc ml-6 space-y-2 mb-4">
+              <li><strong>Service Providers:</strong> Limited to infrastructure providers with equivalent security standards</li>
+              <li><strong>Legal Requirements:</strong> When required by law, regulation, or legal process</li>
+              <li><strong>Business Transfers:</strong> In connection with merger, acquisition, or sale of assets</li>
+            </ul>
+
+            <div class="legal-highlight">
+              <strong>Due Diligence:</strong> All third parties undergo security assessment and sign data protection agreements meeting DPP requirements.
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. User Rights & Responsibilities -->
+        <div class="policy-card bg-gradient-to-br from-white to-gray-50 p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="flex items-center mb-4">
+            <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
+              <span class="text-primary-600 font-semibold">9</span>
+            </div>
+            User Rights & Responsibilities
+          </h3>
+          <div>
+            <h4>9.1 User Rights (GDPR Compliance)</h4>
+            <ul class="list-disc ml-6 space-y-2 mb-4">
+              <li><strong>Right to Access:</strong> Request information about personal data processing</li>
+              <li><strong>Right to Rectification:</strong> Correct inaccurate or incomplete data</li>
+              <li><strong>Right to Erasure:</strong> Request deletion of personal data ("right to be forgotten")</li>
+              <li><strong>Right to Restriction:</strong> Limit processing of personal data under certain conditions</li>
+              <li><strong>Right to Data Portability:</strong> Receive personal data in structured, machine-readable format</li>
+            </ul>
+
+            <h4>9.2 User Responsibilities</h4>
+            <ul class="list-disc ml-6 space-y-2">
+              <li>Maintain security of authentication credentials</li>
+              <li>Promptly report any suspected security incidents</li>
+              <li>Comply with Amazon's Acceptable Use Policy and terms of service</li>
+              <li>Ensure authorized use of IQ5 services for legitimate business purposes</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 10. Audit & Compliance -->
+        <div class="policy-card bg-gradient-to-br from-white to-gray-50 p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="flex items-center mb-4">
+            <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
+              <span class="text-primary-600 font-semibold">10</span>
+            </div>
+            Audit Rights & Compliance Verification
+          </h3>
+          <div>
+            <p class="mb-4">In accordance with DPP Section 3:</p>
+            <ul class="list-disc ml-6 space-y-2">
+              <li>Maintenance of all books and records for 12 months post-agreement termination</li>
+              <li>Cooperation with Amazon or independent auditor assessments</li>
+              <li>Provision of remediation evidence for any identified deficiencies</li>
+              <li>Regular internal audits and compliance verification</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 11. Policy Updates -->
+        <div class="policy-card bg-gradient-to-br from-white to-gray-50 p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="flex items-center mb-4">
+            <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
+              <span class="text-primary-600 font-semibold">11</span>
+            </div>
+            Policy Updates & Modifications
+          </h3>
+          <div>
+            <p class="mb-4">This Privacy Policy may be updated to reflect changes in:</p>
+            <ul class="list-disc ml-6 space-y-2 mb-4">
+              <li>Amazon SP-API DPP or AUP requirements</li>
+              <li>Applicable data protection laws and regulations</li>
+              <li>IQ5 service offerings and data processing activities</li>
+              <li>Security best practices and industry standards</li>
+            </ul>
+            <p>Users will be notified of material changes and continued use of services constitutes acceptance of updated terms.</p>
+          </div>
+        </div>
+
+        <!-- 12. Contact Information -->
+        <div class="policy-card bg-gradient-to-br from-white to-gray-50 p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="flex items-center mb-4">
+            <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center mr-3">
+              <span class="text-primary-600 font-semibold">12</span>
+            </div>
+            Contact Information
+          </h3>
+          <div>
+            <p class="mb-4">For privacy-related inquiries, data subject requests, or security concerns:</p>
+            <ul class="list-disc ml-6 space-y-2 mb-4">
+              <li><strong>Privacy Officer:</strong> <a href="mailto:privacy@iq5.io" class="text-primary-600 hover:underline font-medium">privacy@iq5.io</a></li>
+              <li><strong>Security Incidents:</strong> <a href="mailto:security@iq5.io" class="text-primary-600 hover:underline font-medium">security@iq5.io</a></li>
+              <li><strong>Amazon Compliance:</strong> <a href="mailto:compliance@iq5.io" class="text-primary-600 hover:underline font-medium">compliance@iq5.io</a></li>
+              <li><strong>General Inquiries:</strong> <a href="mailto:info@iq5.io" class="text-primary-600 hover:underline font-medium">info@iq5.io</a></li>
+            </ul>
+            <p><strong>Data Protection Authority:</strong> Dutch Data Protection Authority (Autoriteit Persoonsgegevens)</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Compliance Verification -->
+      <div class="bg-green-50 border border-green-200 rounded-xl p-6 text-center mt-8">
+        <h3 class="text-lg font-semibold text-green-800 mb-2">Amazon DPP Compliance Verified</h3>
+        <p class="text-green-700 mb-4 text-sm">IQ5 maintains full compliance with Amazon SP-API Data Protection Policy requirements</p>
+        <div class="flex flex-wrap justify-center gap-2 text-xs">
+          <span class="bg-green-100 text-green-800 px-3 py-1 rounded">✓ Encryption Standards</span>
+          <span class="bg-green-100 text-green-800 px-3 py-1 rounded">✓ Access Controls</span>
+          <span class="bg-green-100 text-green-800 px-3 py-1 rounded">✓ Incident Response</span>
+          <span class="bg-green-100 text-green-800 px-3 py-1 rounded">✓ Audit Ready</span>
+          <span class="bg-green-100 text-green-800 px-3 py-1 rounded">✓ Data Retention</span>
+          <span class="bg-green-100 text-green-800 px-3 py-1 rounded">✓ PII Protection</span>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-6 text-center bg-gray-800 text-gray-400 text-sm">
-    <p>© 2025 IQ5 B.V. | Vinkenburgstraat 2A, 3512AB Utrecht, Netherlands</p>
-    <br/>
-    <p>
-      <a href="privacy.html" class="hover:underline text-gray-300">Privacy & Security</a> | 
-      <a href="terms.html" class="hover:underline text-gray-300">Terms of Service</a>
-    </p>
-    <br/>
-    <br/>
+  <footer class="bg-gray-900 text-gray-400">
+    <div class="max-w-7xl mx-auto px-6 py-8 grid md:grid-cols-4 gap-6 text-center md:text-left">
+      
+      <!-- Company Info -->
+      <div>
+        <div class="flex items-center space-x-2 mb-3 justify-center md:justify-start">
+          <span class="text-white font-bold text-sm">IQ5 B.V.</span>
+        </div>
+        <p class="text-sm mb-1">Vinkenburgstraat 2A</p>
+        <p class="text-sm mb-1">3512AB Utrecht, Netherlands</p>
+        <p class="text-sm mt-2">Chamber of Commerce (KvK): 12345678</p>
+        <p class="text-sm">VAT: NL123456789B01</p>
+      </div>
+
+      <!-- Product -->
+      <div>
+        <h3 class="text-white font-semibold text-sm mb-3">Product</h3>
+        <ul class="space-y-1 text-sm">
+          <li><a href="index.html#features" class="hover:text-white transition-colors">Features</a></li>
+          <li><a href="index.html#pricing" class="hover:text-white transition-colors">Pricing</a></li>
+          <li><a href="privacy.html" class="hover:text-white transition-colors">Security</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div>
+        <h3 class="text-white font-semibold text-sm mb-3">Resources</h3>
+        <ul class="space-y-1 text-sm">
+          <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy & Security</a></li>
+          <li><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Legal -->
+      <div>
+        <h3 class="text-white font-semibold text-sm mb-3">Company</h3>
+        <ul class="space-y-1 text-sm mb-3">
+          <li><a href="#contact" class="hover:text-white transition-colors">Contact Us</a></li>
+        </ul>
+        <div class="mt-4">
+          <p class="text-sm mb-1">Email: <a href="mailto:info@iq5.io" class="text-primary-400 hover:underline">info@iq5.io</a></p>
+          <p class="text-sm">Support: <a href="mailto:support@iq5.io" class="text-primary-400 hover:underline">support@iq5.io</a></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="border-t border-gray-800 mt-6 pt-4 pb-4 text-center text-gray-500 text-sm">
+      <p>© 2025 IQ5 B.V. All rights reserved. | Fully compliant with Amazon SP-API AUP and DPP policies</p>
+    </div>
   </footer>
 
-  <script>feather.replace()
+
+  <script>
+    // Simple scroll animation for elements
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add fade-in animation to elements when they come into view
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, observerOptions);
+      
+      // Observe elements for animation
+      document.querySelectorAll('.policy-card').forEach(el => {
+        el.style.opacity = 0;
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>
