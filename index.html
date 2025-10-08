@@ -1036,11 +1036,13 @@
       
       try {
         // ✅ PUT YOUR GOOGLE SCRIPT URL HERE
-        const API_URL = 'https://script.google.com/macros/s/AKfycbw_m0Ea5Vkm4WBTOd3pOOXujg6ieULM8Cjf5M1p55pGWqiW48h4QFeyRnGa1L5ctG-MQA/exec';
+        const API_URL = 'https://script.google.com/macros/s/AKfycbyTTaZ_tyR-HRHZUyoLnc7bDCVOLFfhKzhGuW47JNRHJVulnUMkKJMq8eDPsMiUNM2fnw/exec';
         
         const response = await fetch(API_URL, {
           method: 'POST',
-          headers: {'Content-Type': 'application/json'},
+          headers: {
+            'Content-Type': 'application/json'
+          },
           body: JSON.stringify(formData)
         });
         
