@@ -4,7 +4,7 @@
   <!-- Home Page -->
   <url>
     <loc>https://iq5.io/</loc>
-    <lastmod>2025-09-21</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- Privacy & Security Page -->
   <url>
     <loc>https://iq5.io/privacy.html</loc>
-    <lastmod>2025-09-21</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -20,7 +20,7 @@
   <!-- Terms of Service Page -->
   <url>
     <loc>https://iq5.io/terms.html</loc>
-    <lastmod>2025-09-21</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
